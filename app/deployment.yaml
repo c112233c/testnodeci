@@ -20,7 +20,7 @@ spec:
       containers:
       - name: testnodeci
 
-        image: ghcr.io/ne1opd/testnodeci:latest
+        image: ghcr.io/c112233c/testnodeci:latest
 
         imagePullPolicy: Always
 
