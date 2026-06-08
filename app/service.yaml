@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: testnodeci
-  namespace: production
+  namespace: demo
 
 spec:
   type: NodePort
