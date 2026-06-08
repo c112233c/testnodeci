@@ -17,6 +17,9 @@ spec:
         app: testnodeci
 
     spec:
+      imagePullSecrets:
+      - name: ghcr-secret
+      
       containers:
       - name: testnodeci
 
