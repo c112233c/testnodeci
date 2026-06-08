@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: testnodeci
+  namespace: production
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: testnodeci
+
+  template:
+    metadata:
+      labels:
+        app: testnodeci
+
+    spec:
+      containers:
+      - name: testnodeci
+
+        image: ghcr.io/ne1opd/testnodeci:latest
+
+        imagePullPolicy: Always
+
+        ports:
+        - containerPort: 3000
