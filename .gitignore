@@ -1,0 +1,12 @@
+.github/workflows/github-actions-demo.yml
+
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+logs/
+*.log
